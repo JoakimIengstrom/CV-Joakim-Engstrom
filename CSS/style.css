@@ -16,6 +16,58 @@ body {
     padding: 10px;
     }
 
+@media (max-width: 1040px) {
+    .parent {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 2fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;     
+        flex-wrap: wrap;
+        margin: auto;
+        background-color: #E9E5D6;
+        padding: 10px;
+        }
+
+        header{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 25px;
+            background-color: #ACB992;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;    
+        }
+
+        footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 15px;
+            background-color: #ACB992;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        h4 {
+            font-size: medium;
+        }
+        
+}
+
+@media (max-width: 720px) {    
+    img {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 500px) {    
+    img {
+        max-width: 200px;
+        
+    }
+}
+
 header{
     display: flex;
     flex-direction: row;
@@ -46,16 +98,34 @@ a {
     color: black;
 }
 
+.aheader {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+
 a:hover {
     text-decoration: none;
     color: white;
 }
 
-.personImg {
-    margin-left: 5px;
-    
+.personImg {     
+    max-width:max-content;
 }
 
-.selfie {
+.selfie {    
     border-radius: 10px;
+    margin-bottom: 10px;   
+}
+
+.personligt_brev {
+    padding: 5px;
+}
+
+.strongText {
+    font-weight: 700;
+}
+
+.text-link {
+    font-size: large;
 }
